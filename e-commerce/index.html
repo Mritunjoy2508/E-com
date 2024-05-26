@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" id="home-link"><img src="images.jpg" alt="Logo" class="logo"></a>
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="shop-link">Shop</a>
+            <a href="#" id="contact-link">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home-section" class="section">
+            <h2>Welcome to My E-commerce Store</h2>
+            <p>Explore our products and find the best deals.</p>
+            <p>In Order to place you order go to the shop tab.</p>
+        </section>
+        
+        <section id="shop-section" class="section" style="display: none;">
+            <h2>Products</h2>
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <div id="product-list">
+                <div class="product" data-id="1" data-name="Product 1" data-price="899.00">
+                    <img src="271045_txjjn7.webp" alt="Product 1">
+                    <h3>Headphones</h3>
+                    <p>Price: ₹899.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2" data-name="Product 2" data-price="699.00">
+                    <img src="71uREbrNtzL._AC_UY1100_.jpg" alt="Product 2">
+                    <h3>SHIRTS</h3>
+                    <p>Price: ₹699.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact-section" class="section" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us at contact@ecommerce.com.</p>
+            <p>Address-Jalandhar,Punjab</p>
+        </section>
+        
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: ₹0.00</p>
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
